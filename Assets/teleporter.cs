@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class teleporter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string sceneName;
+
+    void OnMouseDown()
     {
-        
+        transform.position += Vector3.down * 0.1f;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseUp()
     {
-        
+        transform.position += Vector3.up * 0.1f;
+
+        if (sceneName != "")
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
