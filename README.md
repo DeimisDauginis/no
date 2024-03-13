@@ -1,1 +1,1 @@
-https://play.unity.com/p/webgl-builds-395830/edit
+https://play.unity.com/p/webgl-builds-395830/
